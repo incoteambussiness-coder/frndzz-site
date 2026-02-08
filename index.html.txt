@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Frndzz - Find Your Tribe</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b9d",
+                        "accent-purple": "#a855f7",
+                        "accent-lime": "#bef264",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#0a0508",
+                        "card-dark": "#1a0b14",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 20px rgba(238, 43, 157, 0.3);
+        }
+        .neon-text-lime {
+            text-shadow: 0 0 10px rgba(190, 242, 100, 0.5);
+        }
+        .asymmetric-shape {
+            clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white transition-colors duration-300 overflow-x-hidden">
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-[1200px]">
+<div class="glass rounded-full px-6 py-3 flex items-center justify-between border border-white/10">
+<div class="flex items-center gap-2">
+<div class="size-8 bg-primary rounded-full flex items-center justify-center neon-glow-primary">
+<span class="material-symbols-outlined text-white text-xl">bolt</span>
+</div>
+<span class="text-xl font-extrabold tracking-tighter italic">FRNDZZ</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Discover</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Safety</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Pricing</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-sm font-bold px-6 py-2 rounded-full border border-white/20 hover:bg-white/10 transition-all">Log In</button>
+<button class="bg-primary hover:bg-primary/80 text-white text-sm font-bold px-6 py-2 rounded-full neon-glow-primary transition-all">Join The Tribe</button>
+</div>
+</div>
+</nav>
+<main class="relative pt-32 pb-20 px-6 overflow-hidden">
+<div class="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] -z-10"></div>
+<div class="absolute bottom-[20%] left-[-10%] w-[400px] h-[400px] bg-accent-purple/20 rounded-full blur-[100px] -z-10"></div>
+<div class="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-12 items-center">
+<div class="relative z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-lime/10 border border-accent-lime/20 mb-6">
+<span class="flex h-2 w-2 rounded-full bg-accent-lime animate-pulse"></span>
+<span class="text-xs font-bold text-accent-lime uppercase tracking-widest neon-text-lime">14,203 Humans Vibing Now</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter mb-8 italic">
+                FIND YOUR <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-purple">TRIBE</span>, <br/>
+                NOT JUST A <span class="underline decoration-accent-lime">VIBE</span>.
+            </h1>
+<p class="text-lg md:text-xl text-slate-400 max-w-[500px] mb-10 leading-relaxed">
+                The premium social space to connect, chat, and vibe with verified humans. No bots, no fakes, just real energy.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 items-center">
+<button class="w-full sm:w-auto px-10 py-5 bg-primary rounded-full text-lg font-black text-white hover:scale-105 transition-transform neon-glow-primary flex items-center justify-center gap-2">
+                    GET STARTED <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<div class="flex -space-x-4">
+<img class="size-12 rounded-full border-4 border-background-dark" data-alt="User avatar portrait 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDER_gTNZtIPjW8OVsNIJPYmf4e4cUvkySCz3AZfMvjlLv68bORbaltVUyl8Ha_nr2cjTfURiMIiLdxIdRfahZ0e8_IZQ87ryQCQsVziR5MmN_CV1CtDiXHmFbkcSSh48RIi7owJsqpsauUZ5A8BG1R7iqu-rbJLnXc48-O8v1YpIbdtALLpW-2Jy8ZK-ZQGvjYG5rUk2sRcdJwDctwl7hIz1MUnWeacimtfTmdvA6-lLsQZcNakJ84gIGo8jTL0lTSy4ezJ8BB7gE"/>
+<img class="size-12 rounded-full border-4 border-background-dark" data-alt="User avatar portrait 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9jYKzKsRHUDUl9nOLK2o95x13_WYA9ILUy9aaQbnwXzp6d8DH6FU3_-Z79OQ-pqrkRurYIHPsykZcoOEJPYAYokPvdWb475X_57MLKZ6sNfiOFrRtF-dAyJzfH-xXk1K9V2ftu73f8ngjzbbA5axVCqvu6FW8M1I88dy0vyJyGbKeJ_Xyh7psL1MmBBcAyb2H6QjylVGbILEALvNBj_U0kvTzbhqacKskO_Hvuh2EdVNVuJfQ098aVlRvivNIsyKc1ZysGAky6-k"/>
+<img class="size-12 rounded-full border-4 border-background-dark" data-alt="User avatar portrait 3" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAavrohUdW2Z6yo1dvGKJ6cY0gfB9lCDIIwi1381vEpvU-VnN19hVaj7ZEZGZBINbwsMvUMVDo065ovtJHgfzCMjl4kql_Em0BAJKvImzowwJLnPuJ_gqib8oBHMCtvDPXFnAbatPZk1nxG5PjQkl2FGlfy6P4n97fSZsU_89Cn6KVn1MOj8oGf4LmMRoCsan-ClGERh2wRdBc9TRm9AmqxSvvGhOUJHv_5u21k9dCg-B87xjKYGFEhx6Qvax-z4Qj43L_LMgUG0cY"/>
+<div class="size-12 rounded-full border-4 border-background-dark bg-card-dark flex items-center justify-center text-xs font-bold">+50k</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="relative w-full aspect-square md:aspect-[4/5] max-w-lg mx-auto">
+<div class="absolute top-10 -right-4 w-full h-full bg-accent-purple/30 rounded-xl -rotate-3"></div>
+<div class="absolute -top-4 -left-4 w-full h-full bg-primary/20 rounded-xl rotate-2"></div>
+<div class="relative w-full h-full bg-cover bg-center rounded-xl overflow-hidden border border-white/10" data-alt="Gen Z group hanging out and laughing" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVw42c4_cwn7WMTc450QGsJSMGQUYSTW6wHQD_GxCW2kg4hCOQSOztc7-JFvVNpeM4TZ5Mzc7_i5RRGAY_-N2N9z4I2zLTjOPPNWeWZubplHgiKwrgm0sr3YO_cj6fdM744bisvMDBzgcXLYnr37cfyeNYUZ9DJkx4gJHLfkw7RQehGiXcyNVpA8rBFnIN3F74_Fw9_0VUfRKI0w6B6G3g2OSBfUwtrfkKYJrb0Q-sx2V4bH6qPcUZQIvSZdoy35KjII8KtDfv9l0')">
+<div class="absolute bottom-6 left-6 right-6 glass p-4 rounded-2xl">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-bold text-white">Vibe Check</h3>
+<p class="text-xs text-white/60">Verified &amp; Active</p>
+</div>
+<span class="material-symbols-outlined text-accent-lime">verified</span>
+</div>
+</div>
+</div>
+<div class="absolute -top-10 -right-10 bg-accent-lime text-black p-4 rounded-full rotate-12 font-black text-sm neon-glow-primary">
+                    NO BOTS! 🚫
+                </div>
+<div class="absolute bottom-20 -left-12 bg-white text-black px-6 py-2 rounded-full -rotate-6 font-black text-sm shadow-xl">
+                    🔥 100% REAL
+                </div>
+</div>
+</div>
+</div>
+</main>
+<section class="py-24 px-6 relative">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="text-4xl md:text-5xl font-black italic mb-6">SKIP THE NOISE. <br/><span class="text-primary">VALUABLE TALK.</span></h2>
+<p class="text-slate-400">We prioritize quality over quantity. Connect instantly with creators and vibers who value their time as much as you do.</p>
+</div>
+<div class="hidden md:block h-px flex-1 bg-gradient-to-r from-transparent via-white/10 to-transparent mx-10 mb-6"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="glass p-8 rounded-xl border-white/5 hover:border-primary/50 transition-all group">
+<div class="size-14 bg-primary/20 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">payments</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Pay-to-Chat</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Direct access to the most popular profiles. No swiping for days, just instant meaningful conversation.</p>
+</div>
+<div class="glass p-8 rounded-xl border-white/5 hover:border-accent-purple/50 transition-all group mt-0 md:mt-8">
+<div class="size-14 bg-accent-purple/20 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-accent-purple text-3xl">verified_user</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Identity Lock</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Every user undergoes a mandatory AI-vibe check. We ensure the person behind the screen is who they say they are.</p>
+</div>
+<div class="glass p-8 rounded-xl border-white/5 hover:border-accent-lime/50 transition-all group mt-0 md:mt-16">
+<div class="size-14 bg-accent-lime/20 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-accent-lime text-3xl">auto_awesome</span>
+</div>
+<h3 class="text-2xl font-bold mb-4">Ultra-Premium</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Experience a social circle that actually adds value to your life. Curated feeds, private rooms, and zero ads.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-card-dark/50 overflow-hidden">
+<div class="max-w-[1200px] mx-auto px-6 mb-12 flex justify-between items-center">
+<h2 class="text-3xl font-black tracking-tight italic">THE VERIFIED SQUAD</h2>
+<button class="text-sm font-bold text-primary flex items-center gap-2 hover:underline">VIEW ALL <span class="material-symbols-outlined text-sm">open_in_new</span></button>
+</div>
+<div class="flex gap-6 px-6 overflow-x-auto pb-8 scrollbar-hide">
+<div class="min-w-[280px] group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden mb-4 border border-white/10">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Profile photo of a stylish young man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5JGwD7GqrQst3VvHfwvH4RO8TvdN0RTrXjJwsW8GNWIz3lzdIePHvRQ9PU73PwGf9cWzOCh5OXxgfqCZHhwN3cJTHl4fJLAJ9M6fT5bwx4HCkculqBkFUooh9LYxT-c_UDbK0Hir-hz7zxG5k3umWXckpxN_gk_pGw1nuAEkdialRS-58U5kHD3Ch04HOFeDYs4Nbxra1HR0g1hrC2gXvSXLDp0Goukx6sl3SX-5tQ8cQA8SHU74NYMsrNAeOGOj2SKmv3rJU8aE"/>
+<div class="absolute top-3 right-3 bg-accent-lime text-black px-3 py-1 rounded-full text-[10px] font-black uppercase">Online</div>
+<div class="absolute bottom-0 inset-x-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<p class="text-white font-black text-xl flex items-center gap-1">Alex, 21 <span class="material-symbols-outlined text-blue-400 text-sm">verified</span></p>
+<p class="text-white/60 text-xs italic">Vibing to House Music 🎧</p>
+</div>
+</div>
+</div>
+<div class="min-w-[280px] group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden mb-4 border border-white/10">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Profile photo of a young woman smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdrzBONnkEbYMPDoNbcc5y0M_ShLtfGcRz6IsJtbE4Iq3Bb1JD55H1k3IZIH2QTlzcohV_ZB2ReQGCkUoDuUrwSL3eiyWqN6miorb_aGZmKDF-RTZEJZvbuS3jht_2pSX22Alzoh3oOSK8jxyJJ2ZxYhIoLFaquDuBNqoHWbSn4kql9aZMB1J7LqrHxmRN5F_q9jgt_mcz1wAUCEAZfRdmr8GFkFaCsNtPVVNcCYHNoHizrv2pOqkDfZnlCfHM13zmEvwCLrWs_4w"/>
+<div class="absolute top-3 right-3 bg-primary text-white px-3 py-1 rounded-full text-[10px] font-black uppercase">Verified</div>
+<div class="absolute bottom-0 inset-x-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<p class="text-white font-black text-xl flex items-center gap-1">Maya, 23 <span class="material-symbols-outlined text-blue-400 text-sm">verified</span></p>
+<p class="text-white/60 text-xs italic">Digital Artist &amp; Creator 🎨</p>
+</div>
+</div>
+</div>
+<div class="min-w-[280px] group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden mb-4 border border-white/10">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Profile photo of a person with colorful hair" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx0enE20VyUs_CyYxAJMEnji-9HhMITmL5fFRVvkfr_lPh7yMwzin_JjrXCm6ITgtOeBJUWZOUSu-LQxT4_qC7Vokv6-1uiTkz-adUjLXv8u5OB6PlyuBDFuxlMLOskq9zfkVDYcxLc7ty-PRuuqUgaUVtDLdGES0um6R2QuppB_BYGYJXVySz5gWTMcMpYDGsq5PPwDBGVFKvayabTkMcEQy8AuXbmB715N6cBsOTMBEzy72vB1yJkxwKysUhKyPabdwxDroiVak"/>
+<div class="absolute top-3 right-3 bg-accent-purple text-white px-3 py-1 rounded-full text-[10px] font-black uppercase">Top Viber</div>
+<div class="absolute bottom-0 inset-x-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<p class="text-white font-black text-xl flex items-center gap-1">Jordan, 20 <span class="material-symbols-outlined text-blue-400 text-sm">verified</span></p>
+<p class="text-white/60 text-xs italic">Ready to talk tech &amp; gaming 🎮</p>
+</div>
+</div>
+</div>
+<div class="min-w-[280px] group cursor-pointer">
+<div class="relative aspect-[3/4] rounded-xl overflow-hidden mb-4 border border-white/10">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Profile photo of a happy person outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb9u5UoLNoQxequeeevlo1HqOfA5_-cVd0a-gLLX5kWY-dUJO7Siis5HDiknuyHvoWW7e6bGUNMHcduU0A7Yej_9RN_GjkmYeJJuawGY00QsmSWPJU8bmr5gX8msCgiStAI8jcEljKom4A67IF7rBQGsv43tFASWHOkYvBBW3drbgNr6DeURZENRTn54GjMnX5ol3Zt6jr6e-JR4wZ3U9AasRCFfowHTJsLAe-cF7UOm6YC6BFtzhypcKy9BS8Z7KOCDPtlozRtXU"/>
+<div class="absolute top-3 right-3 bg-accent-lime text-black px-3 py-1 rounded-full text-[10px] font-black uppercase">Online</div>
+<div class="absolute bottom-0 inset-x-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<p class="text-white font-black text-xl flex items-center gap-1">Sam, 22 <span class="material-symbols-outlined text-blue-400 text-sm">verified</span></p>
+<p class="text-white/60 text-xs italic">Photography &amp; Coffee ☕</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-background-dark py-20 px-6 border-t border-white/5">
+<div class="max-w-[1200px] mx-auto grid md:grid-cols-4 lg:grid-cols-5 gap-12">
+<div class="md:col-span-2">
+<div class="flex items-center gap-2 mb-8">
+<div class="size-10 bg-primary rounded-full flex items-center justify-center neon-glow-primary">
+<span class="material-symbols-outlined text-white">bolt</span>
+</div>
+<span class="text-2xl font-black italic tracking-tighter">FRNDZZ</span>
+</div>
+<h3 class="text-4xl font-black mb-8 italic">STOP SWIPING, <br/><span class="text-primary">START TALKING.</span></h3>
+<div class="flex gap-4">
+<a class="size-10 glass rounded-full flex items-center justify-center hover:bg-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-lg group-hover:text-white transition-colors">public</span>
+</a>
+<a class="size-10 glass rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors group" href="#">
+<span class="material-symbols-outlined text-lg group-hover:text-white transition-colors">share</span>
+</a>
+<a class="size-10 glass rounded-full flex items-center justify-center hover:bg-accent-lime transition-colors group" href="#">
+<span class="material-symbols-outlined text-lg group-hover:text-black transition-colors">alternate_email</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-slate-500 uppercase tracking-widest text-xs">Community</h4>
+<ul class="space-y-4">
+<li><a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Discover Profiles</a></li>
+<li><a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Pricing Plans</a></li>
+<li><a class="text-sm font-semibold hover:text-primary transition-colors" href="#">How it Works</a></li>
+<li><a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Support</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-slate-500 uppercase tracking-widest text-xs">Safe Space</h4>
+<ul class="space-y-4">
+<li><a class="text-sm font-semibold hover:text-accent-lime transition-colors" href="#">Safety Tips</a></li>
+<li><a class="text-sm font-semibold hover:text-accent-lime transition-colors" href="#">Verified Vibe</a></li>
+<li><a class="text-sm font-semibold hover:text-accent-lime transition-colors" href="#">Identity Lock</a></li>
+<li><a class="text-sm font-semibold hover:text-accent-lime transition-colors" href="#">Reporting</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-slate-500 uppercase tracking-widest text-xs">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-sm font-semibold hover:text-accent-purple transition-colors" href="#">Terms &amp; Conditions</a></li>
+<li><a class="text-sm font-semibold hover:text-accent-purple transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-sm font-semibold hover:text-accent-purple transition-colors" href="#">Cookie Policy</a></li>
+<li><a class="text-sm font-semibold hover:text-accent-purple transition-colors" href="#">Refund Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-20 pt-10 border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<p class="text-xs text-slate-500 font-medium">© 2024 Frndzz Platform. All rights reserved.</p>
+<div class="flex items-center gap-2">
+<span class="size-2 bg-accent-lime rounded-full animate-pulse neon-glow-primary"></span>
+<span class="text-[10px] text-slate-400 font-bold uppercase tracking-[0.2em]">All Systems Operational</span>
+</div>
+</div>
+<div class="order-first md:order-none group cursor-default">
+<p class="text-sm font-black tracking-widest italic text-white/40 group-hover:text-white transition-all duration-500">
+                    A PROJECT BY <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent-purple to-accent-lime">INCO TEAM TECHNOLOGY</span>
+</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full border border-white/10 bg-white/5">
+<span class="material-symbols-outlined text-sm text-accent-purple">language</span>
+<span class="text-[10px] font-bold text-white uppercase tracking-wider">English</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>
