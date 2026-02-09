@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Frndzz | Terms &amp; Conditions</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -15,9 +13,9 @@
                 extend: {
                     colors: {
                         "primary": "#ee2b9d",
-                        "background-light": "#f8f6f7",
+                        "accent-lime": "#bef264",
                         "background-dark": "#0a0508",
-                        "card-dark": "#1a0b14",
+                        "card-dark": "#140b12",
                     },
                     fontFamily: {
                         "display": ["Plus Jakarta Sans", "sans-serif"]
@@ -32,242 +30,285 @@
             },
         }
     </script>
-<style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-background-dark text-slate-200 font-display selection:bg-primary selection:text-white;
+            }
         }
-        .neon-glow {
-            text-shadow: 0 0 15px rgba(238, 43, 157, 0.4);
+        @layer components {
+            .glass {
+                background: rgba(20, 11, 18, 0.6);
+                backdrop-filter: blur(16px);
+                border: 1px solid rgba(238, 43, 157, 0.15);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+            }
+            .neon-glow {
+                text-shadow: 0 0 15px rgba(238, 43, 157, 0.5);
+            }
+            .neon-text-lime {
+                text-shadow: 0 0 10px rgba(190, 242, 100, 0.4);
+            }
+            .italic-header {
+                font-style: italic;
+                font-weight: 800;
+            }
+            .custom-scrollbar::-webkit-scrollbar {
+                width: 6px;
+            }
+            .custom-scrollbar::-webkit-scrollbar-track {
+                background: #0a0508;
+            }
+            .custom-scrollbar::-webkit-scrollbar-thumb {
+                background: #ee2b9d;
+                border-radius: 10px;
+            }
         }
-        .glass-card {
-            background: rgba(40, 15, 30, 0.4);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(238, 43, 157, 0.1);
-        }
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: #0a0508;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: #482339;
-            border-radius: 10px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #ee2b9d;
+        .gradient-text {
+            background: linear-gradient(90deg, #ee2b9d 0%, #bef264 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 transition-colors duration-300">
-<!-- Progress Bar (Sticky) -->
-<div class="fixed top-0 left-0 w-full h-1 z-50 bg-background-dark/50">
-<div class="h-full bg-primary shadow-[0_0_10px_#ee2b9d]" style="width: 35%;"></div>
+<body class="custom-scrollbar">
+<div class="fixed top-0 left-0 w-full h-1.5 z-[60] bg-background-dark/80">
+<div class="h-full bg-primary shadow-[0_0_15px_#ee2b9d]" style="width: 45%;"></div>
 </div>
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden font-display">
-<div class="layout-container flex h-full grow flex-col">
-<!-- Navigation -->
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-20 py-4 backdrop-blur-md sticky top-0 z-40 bg-background-dark/80">
-<div class="flex items-center gap-3">
-<div class="size-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-primary/20">
-<span class="material-symbols-outlined text-white text-2xl">diversity_3</span>
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<div class="absolute top-[-10%] left-[-5%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-accent-lime/5 rounded-full blur-[120px]"></div>
 </div>
-<h2 class="text-white text-2xl font-extrabold leading-tight tracking-tighter neon-glow">Frndzz</h2>
+<div class="layout-container relative z-10 flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap px-6 md:px-12 py-6 sticky top-0 z-40 bg-background-dark/60 backdrop-blur-xl">
+<div class="flex items-center gap-3 group cursor-pointer">
+<div class="size-11 bg-primary rounded-2xl flex items-center justify-center shadow-[0_0_20px_rgba(238,43,157,0.3)] group-hover:rotate-6 transition-transform">
+<span class="material-symbols-outlined text-white text-2xl font-bold">diversity_3</span>
 </div>
-<div class="hidden md:flex flex-1 justify-end gap-10 items-center">
-<nav class="flex items-center gap-8">
-<a class="text-white/70 hover:text-primary transition-colors text-sm font-semibold" href="#">Home</a>
-<a class="text-white/70 hover:text-primary transition-colors text-sm font-semibold" href="#">About</a>
-<a class="text-white/70 hover:text-primary transition-colors text-sm font-semibold" href="#">Safety</a>
-<a class="text-primary text-sm font-semibold" href="#">Terms</a>
+<h2 class="text-white text-3xl italic font-black tracking-tighter neon-glow">FRNDZZ</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-white/60 hover:text-primary transition-all text-sm font-bold tracking-widest uppercase" href="#">Home</a>
+<a class="text-white/60 hover:text-primary transition-all text-sm font-bold tracking-widest uppercase" href="#">Safety</a>
+<a class="text-primary text-sm font-bold tracking-widest uppercase border-b-2 border-primary" href="#">Terms</a>
+<button class="flex items-center justify-center rounded-full h-12 px-8 bg-primary text-white text-sm font-black shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+                    JOIN THE VIBE
+                </button>
 </nav>
-<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/25 hover:scale-105 active:scale-95 transition-all">
-<span>Sign Up</span>
-</button>
-</div>
 <div class="md:hidden">
-<span class="material-symbols-outlined text-white">menu</span>
+<span class="material-symbols-outlined text-white text-3xl">menu</span>
 </div>
 </header>
-<main class="flex flex-1 flex-col items-center py-12 px-6">
-<div class="max-w-[840px] w-full">
-<!-- Hero Section -->
-<div class="text-center mb-16">
-<h1 class="text-white text-5xl md:text-6xl font-extrabold tracking-tight mb-4 neon-glow">Terms &amp; Conditions</h1>
-<p class="text-primary/70 text-base font-medium">Last Updated: October 24, 2023 • Version 2.1</p>
+<main class="flex flex-1 flex-col items-center py-16 px-6">
+<div class="max-w-[900px] w-full">
+<div class="text-center mb-20">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black tracking-[0.2em] uppercase mb-6">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                        Legal Documentation v2.1
+                    </div>
+<h1 class="text-white text-6xl md:text-8xl italic-header tracking-tighter mb-6 neon-glow leading-[0.9]">
+                        TERMS <span class="text-accent-lime">&amp;</span><br/>CONDITIONS
+                    </h1>
+<p class="text-white/40 text-sm font-medium tracking-wide">STAY COOL, PLAY FAIR. LAST UPDATED: OCTOBER 24, 2023</p>
 </div>
-<!-- TL;DR Summary Box -->
-<div class="glass-card rounded-xl p-8 mb-16 relative overflow-hidden group">
-<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-8xl text-primary">auto_awesome</span>
+<div class="glass rounded-[2.5rem] p-10 mb-16 relative overflow-hidden group">
+<div class="absolute -top-10 -right-10 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[12rem] text-accent-lime">bolt</span>
 </div>
-<div class="flex items-center gap-3 mb-6">
-<span class="material-symbols-outlined text-primary">summarize</span>
-<h3 class="text-white text-xl font-bold uppercase tracking-widest">The Summary (TL;DR)</h3>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="flex items-start gap-4">
-<div class="bg-primary/20 p-2 rounded-lg">
-<span class="material-symbols-outlined text-primary text-xl">18_up_rating</span>
-</div>
-<div>
-<p class="text-white font-bold text-sm">Age Requirement</p>
-<p class="text-white/60 text-xs">You must be 18+ to use Frndzz. No exceptions.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="bg-primary/20 p-2 rounded-lg">
-<span class="material-symbols-outlined text-primary text-xl">gavel</span>
+<div class="flex items-center gap-4 mb-10">
+<div class="size-12 rounded-xl bg-accent-lime flex items-center justify-center rotate-3">
+<span class="material-symbols-outlined text-black font-bold">auto_awesome</span>
 </div>
 <div>
-<p class="text-white font-bold text-sm">No Misuse</p>
-<p class="text-white/60 text-xs">Zero tolerance for harassment, spam, or illegal content.</p>
+<h3 class="text-white text-2xl font-black italic tracking-tight">THE QUICK VIBE CHECK</h3>
+<p class="text-accent-lime/80 text-xs font-bold tracking-widest uppercase">Everything you need to know in 30 seconds</p>
 </div>
 </div>
-<div class="flex items-start gap-4">
-<div class="bg-primary/20 p-2 rounded-lg">
-<span class="material-symbols-outlined text-primary text-xl">visibility_off</span>
-</div>
-<div>
-<p class="text-white font-bold text-sm">Privacy First</p>
-<p class="text-white/60 text-xs">Your data is yours. We encrypt private chats.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<div class="bg-primary/20 p-2 rounded-lg">
-<span class="material-symbols-outlined text-primary text-xl">verified_user</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+<div class="flex items-start gap-5 p-4 rounded-2xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10">
+<div class="bg-primary/20 p-3 rounded-2xl shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">18_up_rating</span>
 </div>
 <div>
-<p class="text-white font-bold text-sm">User Conduct</p>
-<p class="text-white/60 text-xs">Respect the community. Follow guidelines.</p>
+<p class="text-white font-black text-base italic uppercase tracking-tight">18+ Only</p>
+<p class="text-white/50 text-sm leading-relaxed">No kids allowed. This is an adult space for real connections.</p>
+</div>
+</div>
+<div class="flex items-start gap-5 p-4 rounded-2xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10">
+<div class="bg-accent-lime/20 p-3 rounded-2xl shrink-0">
+<span class="material-symbols-outlined text-accent-lime text-2xl">gavel</span>
+</div>
+<div>
+<p class="text-white font-black text-base italic uppercase tracking-tight">No Trolls</p>
+<p class="text-white/50 text-sm leading-relaxed">Zero tolerance for harassment, hate speech, or creepy vibes.</p>
+</div>
+</div>
+<div class="flex items-start gap-5 p-4 rounded-2xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10">
+<div class="bg-primary/20 p-3 rounded-2xl shrink-0">
+<span class="material-symbols-outlined text-primary text-2xl">lock</span>
+</div>
+<div>
+<p class="text-white font-black text-base italic uppercase tracking-tight">Secured</p>
+<p class="text-white/50 text-sm leading-relaxed">Your chats are private. We don't sell your soul to advertisers.</p>
+</div>
+</div>
+<div class="flex items-start gap-5 p-4 rounded-2xl hover:bg-white/5 transition-colors border border-transparent hover:border-white/10">
+<div class="bg-accent-lime/20 p-3 rounded-2xl shrink-0">
+<span class="material-symbols-outlined text-accent-lime text-2xl">verified</span>
+</div>
+<div>
+<p class="text-white font-black text-base italic uppercase tracking-tight">Own Your Stuff</p>
+<p class="text-white/50 text-sm leading-relaxed">You own your content, but you give us a license to show it.</p>
 </div>
 </div>
 </div>
 </div>
-<!-- Main Content Sections -->
-<div class="space-y-12 text-slate-300 leading-relaxed">
-<section id="introduction">
-<h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-<span class="h-6 w-1 bg-primary rounded-full"></span>
-                                1. Acceptance of Terms
-                            </h2>
-<p class="mb-4">
-                                Welcome to Frndzz. By accessing or using our platform, mobile application, or any services provided by Inco Team Technology (collectively, the "Service"), you agree to be bound by these Terms &amp; Conditions. If you do not agree to all of these terms, do not use the Service.
+<div class="glass rounded-[3rem] p-8 md:p-16 space-y-20 text-slate-300 leading-relaxed">
+<section id="acceptance">
+<h2 class="text-3xl italic-header text-white mb-8 flex items-center gap-4">
+<span class="text-primary font-black">01.</span>
+                            Acceptance of Terms
+                        </h2>
+<div class="pl-0 md:pl-12 border-l-2 border-primary/20">
+<p class="text-lg text-white/80 font-medium">
+                                Welcome to <span class="text-primary font-bold">FRNDZZ</span>. By vibing with our platform, mobile app, or any services provided by Inco Team Technology, you're legally agreeing to these Terms. If you're not feeling it, please don't use the service.
                             </p>
+</div>
 </section>
 <section id="eligibility">
-<h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-<span class="h-6 w-1 bg-primary rounded-full"></span>
-                                2. Eligibility &amp; Account Security
-                            </h2>
-<ul class="space-y-4">
-<li class="flex gap-4">
-<div class="min-w-[8px] h-2 w-2 bg-primary rounded-full mt-2.5 shadow-[0_0_8px_#ee2b9d]"></div>
-<span>You must be at least 18 years of age to create an account. We reserve the right to verify age through official identification if required.</span>
+<h2 class="text-3xl italic-header text-white mb-8 flex items-center gap-4">
+<span class="text-accent-lime font-black">02.</span>
+                            Account Security
+                        </h2>
+<div class="pl-0 md:pl-12 border-l-2 border-accent-lime/20">
+<ul class="space-y-8">
+<li class="flex gap-6">
+<div class="size-3 bg-accent-lime rounded-full mt-2.5 shadow-[0_0_12px_#bef264]"></div>
+<span class="text-white/80">You must be at least <span class="text-white font-bold underline decoration-accent-lime">18 years old</span>. We might ask for ID if you look like a toddler.</span>
 </li>
-<li class="flex gap-4">
-<div class="min-w-[8px] h-2 w-2 bg-primary rounded-full mt-2.5 shadow-[0_0_8px_#ee2b9d]"></div>
-<span>You are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account.</span>
+<li class="flex gap-6">
+<div class="size-3 bg-accent-lime rounded-full mt-2.5 shadow-[0_0_12px_#bef264]"></div>
+<span class="text-white/80">Keep your login details safe. Your account, your responsibility. Don't share your password even with your BFF.</span>
 </li>
-<li class="flex gap-4">
-<div class="min-w-[8px] h-2 w-2 bg-primary rounded-full mt-2.5 shadow-[0_0_8px_#ee2b9d]"></div>
-<span>You agree to provide accurate, current, and complete information during the registration process.</span>
+<li class="flex gap-6">
+<div class="size-3 bg-accent-lime rounded-full mt-2.5 shadow-[0_0_12px_#bef264]"></div>
+<span class="text-white/80">Be real. Provide accurate info when setting up your profile. Ghosting is fine, faking isn't.</span>
 </li>
 </ul>
-</section>
-<section id="content">
-<h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-<span class="h-6 w-1 bg-primary rounded-full"></span>
-                                3. User Content &amp; Conduct
-                            </h2>
-<div class="bg-card-dark rounded-xl p-6 border border-white/5 mb-4">
-<p class="text-sm italic text-white/50 mb-4 font-medium">Community Guidelines Highlight:</p>
-<p>Frndzz is a place for authentic connection. We strictly prohibit the posting of content that is hateful, violent, sexually explicit without consent, or promotes illegal activities. Users who violate these rules face immediate and permanent account suspension.</p>
 </div>
-<p>
-                                You retain all ownership rights in the content you post on Frndzz. However, by posting content, you grant Frndzz a non-exclusive, royalty-free, worldwide license to use, display, and distribute said content solely for the purpose of operating the platform.
+</section>
+<section id="conduct">
+<h2 class="text-3xl italic-header text-white mb-8 flex items-center gap-4">
+<span class="text-primary font-black">03.</span>
+                            Content &amp; Conduct
+                        </h2>
+<div class="pl-0 md:pl-12 border-l-2 border-primary/20">
+<div class="bg-primary/10 rounded-3xl p-8 border border-primary/20 mb-8 transform -rotate-1">
+<p class="text-xs font-black text-primary mb-3 tracking-widest uppercase italic">The Golden Rule:</p>
+<p class="text-xl text-white font-bold leading-tight italic">
+                                    Don't be a jerk. We ban hate, violence, and non-consensual explicit content immediately. Permanent ban means PERMANENT.
+                                </p>
+</div>
+<p class="text-white/60">
+                                You own what you post. However, by sharing it here, you give us a worldwide license to host and show it so your friends can actually see it. Standard stuff.
                             </p>
+</div>
 </section>
 <section id="prohibited">
-<h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-<span class="h-6 w-1 bg-primary rounded-full"></span>
-                                4. Prohibited Activities
-                            </h2>
-<p class="mb-4">You agree not to engage in any of the following prohibited activities:</p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="p-4 rounded-xl bg-white/5 flex items-center gap-3 border border-transparent hover:border-primary/30 transition-all">
-<span class="material-symbols-outlined text-primary">block</span>
-<span class="text-sm">Scraping or data mining</span>
+<h2 class="text-3xl italic-header text-white mb-8 flex items-center gap-4">
+<span class="text-accent-lime font-black">04.</span>
+                            The "Don't Do It" List
+                        </h2>
+<div class="pl-0 md:pl-12 border-l-2 border-accent-lime/20">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+<div class="p-6 rounded-2xl bg-white/5 flex flex-col gap-3 border border-white/5 hover:border-accent-lime/30 transition-all hover:-translate-y-1">
+<span class="material-symbols-outlined text-accent-lime text-3xl">terminal</span>
+<span class="font-black italic uppercase text-sm">No Scraping</span>
+<span class="text-xs text-white/40">Don't try to harvest data with bots.</span>
 </div>
-<div class="p-4 rounded-xl bg-white/5 flex items-center gap-3 border border-transparent hover:border-primary/30 transition-all">
-<span class="material-symbols-outlined text-primary">person_off</span>
-<span class="text-sm">Impersonating others</span>
+<div class="p-6 rounded-2xl bg-white/5 flex flex-col gap-3 border border-white/5 hover:border-accent-lime/30 transition-all hover:-translate-y-1">
+<span class="material-symbols-outlined text-accent-lime text-3xl">masks</span>
+<span class="font-black italic uppercase text-sm">No Catfishing</span>
+<span class="text-xs text-white/40">Impersonating others is a major no-no.</span>
 </div>
-<div class="p-4 rounded-xl bg-white/5 flex items-center gap-3 border border-transparent hover:border-primary/30 transition-all">
-<span class="material-symbols-outlined text-primary">bug_report</span>
-<span class="text-sm">Exploiting system bugs</span>
+<div class="p-6 rounded-2xl bg-white/5 flex flex-col gap-3 border border-white/5 hover:border-accent-lime/30 transition-all hover:-translate-y-1">
+<span class="material-symbols-outlined text-accent-lime text-3xl">bug_report</span>
+<span class="font-black italic uppercase text-sm">No Exploits</span>
+<span class="text-xs text-white/40">Find a bug? Report it. Don't abuse it.</span>
 </div>
-<div class="p-4 rounded-xl bg-white/5 flex items-center gap-3 border border-transparent hover:border-primary/30 transition-all">
-<span class="material-symbols-outlined text-primary">campaign</span>
-<span class="text-sm">Unsolicited advertising</span>
+<div class="p-6 rounded-2xl bg-white/5 flex flex-col gap-3 border border-white/5 hover:border-accent-lime/30 transition-all hover:-translate-y-1">
+<span class="material-symbols-outlined text-accent-lime text-3xl">ad_units</span>
+<span class="font-black italic uppercase text-sm">No Spam</span>
+<span class="text-xs text-white/40">Don't use our space for your side hustle.</span>
+</div>
 </div>
 </div>
 </section>
-<section id="termination">
-<h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-<span class="h-6 w-1 bg-primary rounded-full"></span>
-                                5. Termination
-                            </h2>
-<p>
-                                We may terminate or suspend your access to the Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the Service will cease immediately.
-                            </p>
-</section>
-<!-- Call to Action -->
-<div class="mt-20 pt-10 border-t border-white/10 flex flex-col items-center gap-6">
-<p class="text-white/60 text-sm">Have questions about our legal policies?</p>
-<a class="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold hover:bg-primary hover:text-white transition-all" href="mailto:support@frndzz.in">
-<span class="material-symbols-outlined text-xl">mail</span>
-                                Contact Legal Support
-                            </a>
+<div class="pt-10 flex flex-col items-center gap-8 text-center">
+<div class="size-20 rounded-full bg-primary/20 flex items-center justify-center border border-primary/40">
+<span class="material-symbols-outlined text-primary text-4xl">contact_support</span>
+</div>
+<div>
+<h4 class="text-2xl italic-header text-white mb-2">GOT QUESTIONS?</h4>
+<p class="text-white/40 max-w-sm">Our legal squad is pretty chill. Reach out if you need clarity on any of these points.</p>
+</div>
+<a class="group relative px-10 py-4 rounded-full bg-primary text-white font-black italic text-lg shadow-[0_0_30px_rgba(238,43,157,0.4)] hover:scale-105 active:scale-95 transition-all" href="mailto:support@frndzz.in">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined">mail</span>
+                                EMAIL SUPPORT
+                            </span>
+</a>
 </div>
 </div>
 </div>
 </main>
-<!-- Footer -->
-<footer class="bg-card-dark border-t border-primary/10 mt-20 px-6 py-12">
-<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-<div class="flex flex-col gap-4">
-<div class="flex items-center gap-2">
-<div class="size-6 bg-primary rounded-md flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-xs">diversity_3</span>
+<footer class="bg-black/40 border-t border-white/5 mt-20 px-6 md:px-12 py-16">
+<div class="max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-xl">diversity_3</span>
 </div>
-<span class="text-white font-bold text-lg">Frndzz</span>
+<span class="text-white italic font-black text-2xl tracking-tighter">FRNDZZ</span>
 </div>
-<p class="text-white/40 text-xs leading-relaxed">
-                            Empowering the next generation of social interaction through secure and creative digital spaces.
+<p class="text-white/40 text-sm leading-relaxed max-w-xs">
+                            The social platform designed for the bold, the creative, and the authentic. Built by Gen Z, for everyone.
                         </p>
 </div>
-<div class="flex flex-col items-center gap-2 text-center">
-<p class="text-white/80 font-bold text-sm">Project by Inco Team Technology</p>
-<p class="text-white/40 text-xs">© 2023 Frndzz. All Rights Reserved.</p>
+<div class="flex flex-col items-center justify-center gap-4 text-center">
+<h4 class="gradient-text font-black italic text-xl tracking-tighter">A PROJECT BY INCO TEAM TECHNOLOGY</h4>
+<div class="flex items-center gap-2 px-4 py-2 rounded-full bg-accent-lime/10 border border-accent-lime/20">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-lime opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent-lime"></span>
+</span>
+<span class="text-accent-lime text-[10px] font-black tracking-widest uppercase">All Systems Operational</span>
 </div>
-<div class="flex flex-col md:items-end gap-4">
+</div>
+<div class="flex flex-col md:items-end gap-6">
 <div class="flex gap-4">
-<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 transition-colors" href="#">
-<span class="material-symbols-outlined text-white/60 text-xl">share</span>
+<a class="size-12 rounded-2xl bg-white/5 flex items-center justify-center hover:bg-primary/20 transition-all border border-white/5" href="#">
+<span class="material-symbols-outlined text-white/80 text-xl">share</span>
 </a>
-<a class="size-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary/20 transition-colors" href="#">
-<span class="material-symbols-outlined text-white/60 text-xl">language</span>
+<a class="size-12 rounded-2xl bg-white/5 flex items-center justify-center hover:bg-accent-lime/20 transition-all border border-white/5" href="#">
+<span class="material-symbols-outlined text-white/80 text-xl">language</span>
 </a>
 </div>
-<p class="text-primary text-sm font-semibold">support@frndzz.in</p>
+<p class="text-primary font-black italic text-xl tracking-tight">support@frndzz.in</p>
+<p class="text-white/20 text-[10px] font-bold tracking-widest uppercase">© 2024 FRNDZZ CORE. ALL RIGHTS RESERVED.</p>
+</div>
 </div>
 </div>
 </footer>
 </div>
 </div>
-<!-- Floating Scroll to Top -->
-<button class="fixed bottom-8 right-8 size-12 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl shadow-primary/50 z-50 hover:scale-110 active:scale-90 transition-transform" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-<span class="material-symbols-outlined">expand_less</span>
+<button class="fixed bottom-10 right-10 size-14 bg-accent-lime text-black rounded-2xl flex items-center justify-center shadow-[0_0_25px_rgba(190,242,100,0.3)] z-50 hover:scale-110 active:scale-90 transition-all hover:rotate-6" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+<span class="material-symbols-outlined font-black">expand_less</span>
 </button>
+
 </body></html>
