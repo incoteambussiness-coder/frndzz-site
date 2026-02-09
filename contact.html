@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Frndzz Contact Page - Inco Team Technology</title>
+<title>Frndzz Contact Page - Updated Details</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
@@ -32,9 +30,11 @@
             },
         }
     </script>
-<style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Plus Jakarta Sans', sans-serif;
+            }
         }
         .neon-glow {
             text-shadow: 0 0 10px rgba(238, 43, 157, 0.5), 0 0 20px rgba(238, 43, 157, 0.3);
@@ -51,15 +51,14 @@
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<body class="bg-background-dark text-white transition-colors duration-300">
 <div class="relative min-h-screen flex flex-col font-display bg-mesh">
-<!-- Navigation -->
 <header class="w-full max-w-7xl mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
 <div class="flex items-center gap-3">
 <div class="bg-primary p-2 rounded-full">
 <span class="material-symbols-outlined text-white text-2xl">favorite</span>
 </div>
-<h2 class="text-2xl font-extrabold tracking-tighter text-slate-900 dark:text-white">FRNDZZ</h2>
+<h2 class="text-2xl font-extrabold tracking-tighter text-white">FRNDZZ</h2>
 </div>
 <nav class="hidden md:flex items-center gap-10">
 <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Home</a>
@@ -69,22 +68,20 @@
 </nav>
 <div class="flex items-center gap-4">
 <button class="bg-primary text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
-                    Download App
-                </button>
+                Download App
+            </button>
 </div>
 </header>
-<!-- Main Content Section -->
 <main class="flex-grow w-full max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-24">
 <div class="text-center mb-16">
 <span class="inline-block py-1 px-4 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-4">Support Center</span>
-<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter dark:text-white neon-glow mb-4">Contact Us</h1>
-<p class="text-slate-500 dark:text-slate-400 text-lg max-w-2xl mx-auto font-medium">
-                    We're here to help you connect, chat, and vibe. Reach out for any questions about the FRNDZZ platform.
-                </p>
+<h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter text-white neon-glow mb-4">Contact Us</h1>
+<p class="text-slate-400 text-lg max-w-2xl mx-auto font-medium">
+                We're here to help you connect, chat, and vibe. Reach out for any questions about the FRNDZZ platform.
+            </p>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-<!-- Left Side: Company Info Card -->
-<div class="glass-card rounded-xl p-8 lg:p-12 flex flex-col justify-between">
+<div class="glass-card rounded-xl p-8 lg:p-12 flex flex-col h-full">
 <div>
 <div class="mb-10">
 <h3 class="text-3xl font-bold mb-2">Inco Team Technology</h3>
@@ -102,24 +99,33 @@
 </div>
 <div class="flex items-start gap-5">
 <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<p class="text-slate-400 text-sm font-medium mb-1">Call us at</p>
+<a class="text-xl font-bold hover:text-primary transition-colors" href="tel:+918055792630">+91 8055792630</a>
+</div>
+</div>
+<div class="flex items-start gap-5">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-primary">location_on</span>
 </div>
 <div>
 <p class="text-slate-400 text-sm font-medium mb-1">Our Location</p>
-<p class="text-xl font-bold">New Delhi, India</p>
+<p class="text-lg md:text-xl font-bold leading-tight">Plot 4, Prabhakar Apt, Near OLA,<br/>Badlapur East 421503, India, MH</p>
 </div>
 </div>
-<div class="flex items-start gap-5">
+<div class="flex items-start gap-5 pt-4">
 <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
 <span class="material-symbols-outlined text-primary">public</span>
 </div>
 <div>
 <p class="text-slate-400 text-sm font-medium mb-1">Follow Us</p>
 <div class="flex gap-4 mt-2">
-<div class="size-8 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
+<div class="size-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all">
 <span class="material-symbols-outlined text-sm">share</span>
 </div>
-<div class="size-8 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary/20 cursor-pointer transition-colors">
+<div class="size-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary/20 hover:border-primary/50 cursor-pointer transition-all">
 <span class="material-symbols-outlined text-sm">alternate_email</span>
 </div>
 </div>
@@ -127,12 +133,7 @@
 </div>
 </div>
 </div>
-<div class="mt-12 overflow-hidden rounded-lg h-48 w-full border border-slate-800">
-<div class="w-full h-full bg-slate-800" data-location="New Delhi, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTP2EitMPCB6FFCWZxWyfA_E_k7jKmhkl4MZO4Q-S4CBFoFGmE8EOjp5ZVp9WW4W8m9gXgspNwjHnir7DZ9w8-ReHZahoXBMDV4AUHn8b_8v7OS9jd0RT1ofNFut4a4mUerFc67rKSX8O-uMHw8TPoR5BN0IvpuMb9qr1uQcAL8vV3YXtj3sawAUYYDDk2PncY_12Z1ox1m2-QGUgkHnGP5S_nbQv26eBFDlLAZpoXfngnBoDRbH7C-wsWXzTnWi34lBjTzXXvP-o'); background-size: cover; background-position: center;">
 </div>
-</div>
-</div>
-<!-- Right Side: Contact Form -->
 <div class="glass-card rounded-xl p-8 lg:p-12">
 <h3 class="text-2xl font-bold mb-8">Send a Message</h3>
 <form action="#" class="space-y-6">
@@ -162,12 +163,11 @@
 </div>
 </div>
 </main>
-<!-- Footer -->
 <footer class="w-full border-t border-slate-800/50 mt-auto">
 <div class="max-w-7xl mx-auto px-6 lg:px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-6">
 <div class="flex flex-col items-center md:items-start">
 <p class="text-slate-500 text-sm font-medium">© 2026 FRNDZZ Platform. All rights reserved.</p>
-<p class="text-slate-600 text-xs mt-1">An Inco Team Technology Project</p>
+<p class="text-slate-600 text-xs mt-1">Project by Inco Team Technology</p>
 </div>
 <div class="flex gap-8">
 <a class="text-slate-500 hover:text-white text-xs font-bold uppercase tracking-widest" href="#">Privacy Policy</a>
@@ -181,4 +181,5 @@
 </div>
 </footer>
 </div>
+
 </body></html>
