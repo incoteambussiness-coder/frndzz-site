@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us – FRNDZZ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:'Plus Jakarta Sans', sans-serif;
+  background:#0a0508;
+  color:#ffffff;
+}
+.container{
+  max-width:800px;
+  margin:0 auto;
+  padding:60px 20px;
+}
+h1{
+  font-size:36px;
+  margin-bottom:20px;
+}
+p{
+  color:#cbd5e1;
+  line-height:1.6;
+  margin-bottom:12px;
+}
+.card{
+  background:#1a0b14;
+  border:1px solid rgba(255,255,255,0.1);
+  border-radius:16px;
+  padding:24px;
+}
+.footer{
+  margin-top:40px;
+  font-size:12px;
+  color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Contact Us</h1>
+
+  <div class="card">
+    <p><strong>Company Name:</strong> Inco Team Technology</p>
+    <p><strong>Business Type:</strong> Digital Communication Platform</p>
+    <p><strong>Support Email:</strong> support@frndzz.in</p>
+    <p><strong>Country of Operation:</strong> India</p>
+  </div>
+
+  <div class="footer">
+    © 2026 FRNDZZ Platform. All rights reserved.
+  </div>
+</div>
+
+</body>
+</html>
